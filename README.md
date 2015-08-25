@@ -26,7 +26,7 @@ The LCD display is optional.
   
   
 ## **Scripts** 
-- LCD_temperature.ino  
+- **LCD_temperature.ino**  
 Skecth for arduino that sends the temperature to Raspberry pi via serial.  
 Tip : on linux, this error can appear during upload :  
 ```
@@ -43,7 +43,7 @@ http://www.getmicros.net/arduino-ds18b20-example.php
 http://arduino-er.blogspot.fr/2014/08/arduino-ide-error-avrdude-seropen-cant.html  
   
   
-- getArduinoTemp.py  
+- **getArduinoTemp.py**  
 This script save the received temperature in a file (*temperature.log*). It overwrites it.  
 Place this script in */home/pi/domoticz/scripts/python*.  
 To launch it at boot, add an crontab job for user pi :  
@@ -52,7 +52,7 @@ To launch it at boot, add an crontab job for user pi :
 ```
   
   
-- script_time_temperature.lua  
+- **script_time_temperature.lua**  
 This script reads temperature from *temperature.log*.  
 Place this script in */home/pi/domoticz/scripts/lua*.  
 Domoticz executes it every minute.  
