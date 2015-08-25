@@ -30,7 +30,7 @@ ioctl("TIOCMGET"): Inappropriate ioctl for device
 ```
 the fix is :  
 ```
-$ sudo usermod -a -G dialout <username>  
+$ sudo usermod -a -G dialout pi 
 $ sudo chmod a+rw /dev/ttyACM0  
 ```
   
