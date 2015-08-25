@@ -28,7 +28,7 @@ The LCD display is optional.
 ## **Scripts** 
 - **LCD_temperature.ino**  
   
-Skecth for arduino that sends the temperature to Raspberry pi via serial.  
+Sketch for arduino that sends the temperature to Raspberry pi via serial.  
 Tip : on linux, this error can appear during upload :  
 ```
 avrdude: ser_open(): can't open device "/dev/ttyACM0": Permission denied  
@@ -39,9 +39,9 @@ the fix is :
 $ sudo usermod -a -G dialout pi 
 $ sudo chmod a+rw /dev/ttyACM0  
 ```
-sources :   
+*sources :   
 http://www.getmicros.net/arduino-ds18b20-example.php  
-http://arduino-er.blogspot.fr/2014/08/arduino-ide-error-avrdude-seropen-cant.html  
+http://arduino-er.blogspot.fr/2014/08/arduino-ide-error-avrdude-seropen-cant.html*  
   
   
 - **getArduinoTemp.py**  
@@ -60,4 +60,5 @@ This script reads temperature from *temperature.log*.
 Place this script in */home/pi/domoticz/scripts/lua*.  
 Domoticz executes it every minute.  
 Prerequisites : create a dummy device on Domoticz, with a virtual sensor  
-source : https://www.domoticz.com/forum/viewtopic.php?f=28&t=1475  
+*source :  
+https://www.domoticz.com/forum/viewtopic.php?f=28&t=1475*  
