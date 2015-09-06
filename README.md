@@ -7,8 +7,8 @@ The LCD display is optional.
 ## **Hardware**  
 - Raspberry pi  
 - Arduino (I use an Arduino Mega)  
-- DS18B20 temperature sensor  
-- LCD Screen (optional)  
+- DS18B20 temperature sensor and a 4.7k Ω Resistor  
+- LCD Screen and a potentiometer (optional)  
 
 ![Fritzing Sketch](https://raw.githubusercontent.com/SamR1/domoticz-arduino-temperature/master/images/sketch.png)
   
