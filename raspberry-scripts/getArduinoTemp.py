@@ -10,7 +10,7 @@ import time
 print('==> starting getArduinoTemp.py')
 
 # file storing temperature
-Filename = 'temperature.log'
+Filename = '/home/pi/temperature.log'
 
 serialArduino = serial.Serial('/dev/ttyACM0', 9600)
 
