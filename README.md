@@ -52,6 +52,11 @@ To launch it at boot, add an crontab job for user pi :
 ```
 @reboot python /home/pi/domoticz/scripts/python/getArduinoTemp.py >> /home/pi/getArduinoTemp.log 2>&1  
 ```
+Prerequisites : [pyserial](https://github.com/pyserial/pyserial) must be installed  
+To install it :   
+```
+pip install pyserial
+```
   
   
 - **script_time_temperature.lua**  
